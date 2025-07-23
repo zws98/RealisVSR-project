@@ -1,12 +1,15 @@
+Anstatt nur den Code bereitzustellen, werde ich die relevanten Abschnitte des HTML-Codes kommentieren, um zu erklären, welche Informationen aus Ihrer Arbeit wo eingefügt wurden.
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta name="description" content="Wir schlagen RealisVSR vor, ein hochfrequenz-detailverstärktes Videodiffusionsmodell zur Lösung von Problemen bei der Vide-Super-Resolution, einschließlich inkonsistenter Zeitdynamik, begrenzter Hochfrequenzdetailwiederherstellung und unzureichender Bewertung.">
+  <meta property="og:title" content="RealisVSR: Detail-enhanced Diffusion for Real-World 4K Video Super-Resolution"/>
+  <meta property="og:description" content="Wir schlagen RealisVSR vor, ein hochfrequenz-detailverstärktes Videodiffusionsmodell zur Lösung von Problemen bei der Vide-Super-Resolution, einschließlich inkonsistenter Zeitdynamik, begrenzter Hochfrequenzdetailwiederherstellung und unzureichender Bewertung."/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
@@ -14,17 +17,17 @@
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="RealisVSR: Detail-enhanced Diffusion for Real-World 4K Video Super-Resolution">
+  <meta name="twitter:description" content="Wir schlagen RealisVSR vor, ein hochfrequenz-detailverstärktes Videodiffusionsmodell zur Lösung von Problemen bei der Vide-Super-Resolution, einschließlich inkonsistenter Zeitdynamik, begrenzter Hochfrequenzdetailwiederherstellung und unzureichender Bewertung.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="Video Super-Resolution, VSR, Diffusion Models, 4K Video, Detail Enhancement, Temporal Consistency, RealisVSR, RealisVideo-4K">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>RealisVSR</title>
+  <title>RealisVSR: Detail-enhanced Diffusion for Real-World 4K Video Super-Resolution</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,22 +55,29 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">RealisVSR: Detail-enhanced Diffusion for Real-World 4K Video Super-Resolution</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+              <span class="author-block">Weisong Zhao<sup>1,2,*,†</sup>,</span>
+              <span class="author-block">Jingkai Zhou<sup>6,*,†</sup>,</span>
+              <span class="author-block">Xiangyu Zhu<sup>3,4</sup>,</span>
+              <span class="author-block">Weihua Chen<sup>6,†</sup>,</span>
+              <span class="author-block">Xiao-Yu Zhang<sup>1,2,†</sup>,</span>
+              <span class="author-block">Zhen Lei<sup>3,4,5,†</sup>,</span>
+              <span class="author-block">Fan Wang<sup>6</sup></span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Institute of Information Engineering, Chinese Academy of Sciences,</span>
+              <span class="author-block"><sup>2</sup>School of Cyber Security, University of Chinese Academy of Sciences,</span>
+              <span class="author-block"><sup>3</sup>State Key Laboratory of Multimodal Artificial Intelligence Systems, Institute of Automation, Chinese Academy of Science,</span>
+              <span class="author-block"><sup>4</sup>School of Artificial Intelligence, University of Chinese Academy of Sciences,</span>
+              <span class="author-block"><sup>5</sup>CAIR, Hong Kong Institute of Science & Innovation, Chinese Academy of Sciences,</span>
+              <span class="author-block"><sup>6</sup>DAMO Academy</span>
+              <br>
+              <span class="author-block">AAAI 2026</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Gleicher Beitrag, <sup>†</sup>Korrespondierender Autor</small></span>
+            </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
@@ -133,7 +143,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        RealisVSR erzielt eine anspruchsvolle Detailverbesserung und zeitliche Konsistenz bei der 4K-Video-Super-Resolution und übertrifft führende Methoden wie Upscale-A-Video, RealViformer und STAR.
       </h2>
     </div>
   </div>
@@ -148,7 +158,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Video Super-Resolution (VSR) has achieved significant progress through diffusion models, effectively addressing the over-smoothing issues inherent in GAN-based methods. Despite recent advances, three critical challenges persist in VSR community: 1) Inconsistent modeling of temporal dynamics in foundational models; 2) limited high-frequency detail recovery under complex real-world degradations; and 3) insufficient evaluation of detail enhancement and 4K super-resolution, as current methods primarily rely on 720P datasets with inadequate details. To address these challenges, we propose <b>RealisVSR</b>, a high-frequency detail-enhanced video diffusion model with three core innovations: 1) Consistency Preserved ControlNet (CPC) architecture integrated with the Wan2.1 video diffusion to model the smooth and complex motions and suppress artifacts; 2) High-Frequency Rectified Diffusion Loss (HR-Loss) combining wavelet decomposition and HOG feature constraints for texture restoration; 3) <b>RealisVideo-4K</b>, the first public 4K VSR benchmark containing 1,000 high-definition video-text pairs. Leveraging the advanced spatio-temporal guidance of Wan2.1, our method requires only 5–25% of the training data volume compared to existing approaches. Extensive experiments on VSR benchmarks (REDS, SPMCS, UDM10, YouTube-HQ, VideoLQ, RealisVideo-720P) demonstrate our superiority, particularly in ultra-high-resolution scenarios.
           </p>
         </div>
       </div>
@@ -278,7 +288,12 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@inproceedings{zhao2026realisvsr,
+  title     = {RealisVSR: Detail-enhanced Diffusion for Real-World 4K Video Super-Resolution},
+  author    = {Zhao, Weisong and Zhou, Jingkai and Zhu, Xiangyu and Chen, Weihua and Zhang, Xiao-Yu and Lei, Zhen and Wang, Fan},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  year      = {2026}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -291,7 +306,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
@@ -310,3 +325,4 @@
 
   </body>
   </html>
+```
